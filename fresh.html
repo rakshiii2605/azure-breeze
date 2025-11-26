@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Breeze - Purest Perfumes</title>
+    <link rel="stylesheet" href="azure.css">
+</head>
+<body>
+    <header>
+        <div class="align">
+            <img src="azurelogo.jpeg" alt="Azure Breeze Logo"/>
+            <nav>
+                <ul class="list">
+                    <li><a href="AzureBreeze.html">Home</a></li>
+                    <li><a href="night.html">Night Perfumes</a></li>
+                    <li><a href="floral.html">Floral Perfumes</a></li>
+                    <li><a href="fresh.html">Fresh Perfumes</a></li>
+                    <li><a href="woody.html">Woody Perfumes</a></li>
+                    <li><a href="oriental.html">Oriental Perfumes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Top Fresh Perfume</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/812hda4yOxL._UF1000,1000_QL80_.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>FREGRANTO Fresh Diva Perfume For Women</h3>
+                    <p>Company - fresh diva</p>
+                    <p class="product-type"><i>Type: fresh Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://media.allure.com/photos/666c72c20452c7490ea16a3b/3:4/w_748%2Cc_limit/Marc%2520Jacobs%2520Daisy%2520Ever%2520So%2520Fresh%2520Eau%2520de%2520Parfum.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>diacy floral jacob</h3>
+                    <p>Company - fruity</p>
+                    <p class="product-type"><i>Type: fresh Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="product-card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/elledigital-ecomm-0926-014-67103bc337408.jpg?crop=0.498xw:1.00xh;0.252xw,0&resize=640:*" alt="Kisuki Eau de Parfum"/>
+                    <h3>newyork gardenia</h3>
+                    <p>Company - NYC</p>
+                    <p class="product-type"><i>Type: fresh  Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>    
+    <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@azurebreeze.com</p>
+          <p>Phone: +91 7896547897</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 azurebreeze. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleDetails(button) {
+      const detailsDiv = button.nextElementSibling;
+      if (detailsDiv.style.display === "none") {
+        detailsDiv.style.display = "block";
+      } else {
+        detailsDiv.style.display = "none";
+      }
+    }
+
+    function toggleReviews(button) {
+      const reviewsDiv = button.nextElementSibling;
+      if (reviewsDiv.style.display === "none") {
+        reviewsDiv.style.display = "block";
+      } else {
+        reviewsDiv.style.display = "none";
+      }
+    }
+  </script>           
+</body>
+</html>

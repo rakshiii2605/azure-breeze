@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Breeze - Purest Perfumes</title>
+    <link rel="stylesheet" href="azure.css">
+</head>
+<body>
+    <header>
+        <div class="align">
+            <img src="azurelogo.jpeg" alt="Azure Breeze Logo"/>
+            <nav>
+                <ul class="list">
+                    <li><a href="AzureBreeze.html">Home</a></li>
+                    <li><a href="night.html">Night Perfumes</a></li>
+                    <li><a href="floral.html">Floral Perfumes</a></li>
+                    <li><a href="fresh.html">Fresh Perfumes</a></li>
+                    <li><a href="woody.html">Woody Perfumes</a></li>
+                    <li><a href="oriental.html">Oriental Perfumes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Top Night Perfumes</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/391574732/BA/OG/BB/213002817/dubai-night-epd-golden-series-perfume-500x500.png" alt="Kisuki Eau de Parfum"/>
+                    <h3>Sage Dubai night EPD golden series</h3>
+                    <p>Company - Sage Dubai</p>
+                    <p class="product-type"><i>Type: Night Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/APRIL/17/ffXCxtHE_724045ab205b425b9395bd1236c67560.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>Midnight Bloom- Perfume and body mist</h3>
+                    <p>Company - Aqualogica</p>
+                    <p class="product-type"><i>Type: Night Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+          <div class="details" style="display: none; margin-top: 10px;">
+            <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+            <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+            <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+            <div class="reviews" style="display: none; margin-top: 10px;">
+              <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+              <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+              <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+            </div>
+          </div>
+                </div>   
+                <div class="product-card">
+                    <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000000491332240/MQCKAW4xD-000000000491332240_4.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>Black Opium Eau De Parfum</h3>
+                    <p>Company - Yves Saint Laurent</p>
+                    <p class="product-type"><i>Type: Night Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+          <div class="details" style="display: none; margin-top: 10px;">
+            <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+            <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+            <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+            <div class="reviews" style="display: none; margin-top: 10px;">
+              <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+              <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+              <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+            </div>
+          </div>
+                </div> 
+            </div>
+        </div>
+    </section>  
+    <footer>
+        <center>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: support@azurebreeze.com</p>
+                        <p>Phone: +91 7896547897</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+                    </div>
+                </div>
+                    <p class="footer-bottom">&copy; 2025 azurebreeze. All rights reserved.</p>
+                </div>
+            </div>    
+        </center>
+    </footer> 
+    <script>
+    function toggleDetails(button) {
+      const detailsDiv = button.nextElementSibling;
+      if (detailsDiv.style.display === "none") {
+        detailsDiv.style.display = "block";
+      } else {
+        detailsDiv.style.display = "none";
+      }
+    }
+
+    function toggleReviews(button) {
+      const reviewsDiv = button.nextElementSibling;
+      if (reviewsDiv.style.display === "none") {
+        reviewsDiv.style.display = "block";
+      } else {
+        reviewsDiv.style.display = "none";
+      }
+    }
+  </script>        
+
+</body>
+</html>

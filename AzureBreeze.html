@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Breeze - Purest Perfumes</title>
+  <link rel="stylesheet" href="azure.css">
+  <header>
+    <div class="align">
+      <img src="azurelogo.jpeg" alt="">
+      <div>
+        <center>
+          <nav>
+            <ul class="list">
+              <li><a href="#"><h2>Home</h2></a></li>
+              <li><a href="#top-perfumes"><h2>Top Perfumes</h2></a></li>
+              <li><a href="#perfume-types"><h2>Types</h2></a></li>
+              <li><a href="review.html"><h2>Reviews</h2></a></li>
+              <li><a href="AzureBreeze.html"><h2>About Us</h2></a></li>
+            </ul>
+          </nav>
+        </center>
+        <div class="search-box">
+          <input type="text" placeholder="Search perfumes...">
+          <button type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <h1>Natural, Organic, Sustainable</h1>
+      <p>Discover products crafted with love for yourself and planet.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+  <section class="products" id="top-perfumes">
+    <div class="container">
+      <h2>Top Perfumes</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="missdior.jpg" alt="Product 1" />
+          <h3>Dior Miss Dior Eau de Parfum For Women</h3>
+          <p>Company - Miss Dior</p>
+          <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+          <div class="details" style="display: none; margin-top: 10px;">
+            <p><strong>Sizes Available:</strong> 30ml, 50ml, 100ml</p>
+            <p><strong>Prices:</strong> ₹2500, ₹4000, ₹7000</p>
+            <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+            <div class="reviews" style="display: none; margin-top: 10px;">
+              <p><strong>John D.</strong>: ★★★★★ – "Absolutely love the fragrance! Lasts all day."</p>
+              <p><strong>Priya S.</strong>: ★★★★☆ – "Nice scent but could be stronger."</p>
+              <p><strong>Anil K.</strong>: ★★★★★ – "Perfect for daily use, great price!"</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="gucci.jpg" alt="Product 2" />
+          <h3>Gucci Flora Gorgeous Jasmine Eau De Parfum For Her</h3>
+          <p>Company - Gucci</p>
+          <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+          <div class="details" style="display: none; margin-top: 10px;">
+            <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+            <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+            <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+            <div class="reviews" style="display: none; margin-top: 10px;">
+              <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+              <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+              <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="chanel.jpg" alt="Product 3" />
+          <h3>Chanel Chance Eau Tendre Eau de Parfum Spray</h3>
+          <p>Company - Chanel</p>
+          <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+          <div class="details" style="display: none; margin-top: 10px;">
+            <p><strong>Sizes Available:</strong> 35ml, 50ml, 100ml</p>
+            <p><strong>Prices:</strong> ₹3000, ₹4500, ₹7500</p>
+            <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+            <div class="reviews" style="display: none; margin-top: 10px;">
+              <p><strong>Meera S.</strong>: ★★★★★ – "Elegant, soft, and lasts long!"</p>
+              <p><strong>Vikas R.</strong>: ★★★★☆ – "Very nice, but a bit pricey."</p>
+              <p><strong>Ananya G.</strong>: ★★★★★ – "My favorite perfume ever!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="types" id="perfume-types">
+    <div class="container">
+      <h2>Perfume Types</h2>
+      <div class="type-buttons">
+        <a href="night.html" class="btn-type">Night Perfume</a>
+        <a href="floral.html" class="btn-type">Floral Perfume</a>
+        <a href="fresh.html" class="btn-type">Fresh Perfume</a>
+        <a href="woody.html" class="btn-type">Woody Perfume</a>
+        <a href="oriental.html" class="btn-type">Oriental Perfume</a>
+      </div>
+    </div>
+</section>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2>About Azure Breeze</h2>
+      <p>
+        Azure Breeze is committed to providing eco-friendly, cruelty-free products that harness the power of nature. 
+        Our formulations are free from harmful chemicals and designed to care for your body and the environment.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <center>
+      <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@azurebreeze.com</p>
+          <p>Phone: +91 7896547897</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 azurebreeze. All rights reserved.</p>
+    </div>
+    </center>
+  </footer>
+  <script>
+    function toggleDetails(button) {
+      const detailsDiv = button.nextElementSibling;
+      if (detailsDiv.style.display === "none") {
+        detailsDiv.style.display = "block";
+      } else {
+        detailsDiv.style.display = "none";
+      }
+    }
+
+    function toggleReviews(button) {
+      const reviewsDiv = button.nextElementSibling;
+      if (reviewsDiv.style.display === "none") {
+        reviewsDiv.style.display = "block";
+      } else {
+        reviewsDiv.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

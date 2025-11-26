@@ -1,0 +1,318 @@
+body, html { 
+  margin: 0; 
+  padding: 0; 
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to right, white, plum); 
+  scroll-behavior: smooth;
+} 
+
+img { 
+  width: 260px; 
+  height: 150px; 
+} 
+.align { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 20px; 
+} 
+.list { 
+  display: flex; 
+  gap: 30px; 
+  list-style: none; 
+  justify-content: center; 
+  align-items: center; 
+  font-style: italic; 
+} 
+.list li a { 
+  text-decoration: none; 
+  color: black; 
+  font-size: 1.1rem; 
+  font-weight: bold; 
+  position: relative;
+} 
+.list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: plum;
+  transition: width 0.3s ease;
+}
+.list li a:hover { 
+  color: white; 
+  text-decoration: underline; 
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/1200x/1b/32/62/1b32629bcbf5014aae713af0f7c33012.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero .container {
+    position: relative;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  animation: popIn 2.5s ease forwards; /* slower pop effect */
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);  /* start small */
+    opacity: 0;           /* invisible */
+  }
+  50% {
+    transform: scale(1.2); /* pop slightly bigger */
+    opacity: 1;            /* visible */
+  }
+  100% {
+    transform: scale(1);   /* settle to normal size */
+  }
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: plum;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background: #d580ff;
+    transform: translateY(-3px);
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 430px;
+    height: auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;  
+}
+
+.types {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.types h2 {
+  margin-bottom: 20px;
+}
+
+.type-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-type {
+  display: inline-block;
+  background-color: plum;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-type:hover {
+  background-color: #d580ff;
+  transform: translateY(-3px);
+}
+.about {
+  padding: 80px 20px;
+  background: #f9f9f9;        /* light background for contrast */
+  text-align: center;
+}
+
+.about .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: plum;             /* match brand green */
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Contact Section Below Each Product */
+.contact-card {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.contact-card h4 {
+    margin-bottom: 10px;
+    color: plum;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border: 2px solid plum;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  border-color: #d580ff;
+}
+
+.search-box button {
+  padding: 8px 15px;
+  border: 2px solid plum;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background-color: plum;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #d580ff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}

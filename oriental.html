@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Breeze - Purest Perfumes</title>
+    <link rel="stylesheet" href="azure.css">
+</head>
+<body>
+    <header>
+        <div class="align">
+            <img src="azurelogo.jpeg" alt="Azure Breeze Logo"/>
+            <nav>
+                <ul class="list">
+                    <li><a href="AzureBreeze.html">Home</a></li>
+                    <li><a href="night.html">Night Perfumes</a></li>
+                    <li><a href="floral.html">Floral Perfumes</a></li>
+                    <li><a href="fresh.html">Fresh Perfumes</a></li>
+                    <li><a href="woody.html">Woody Perfumes</a></li>
+                    <li><a href="oriental.html">Oriental Perfumes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Top Oriental Perfumes</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_1020/coco-eau-de-parfum-spray-3-4fl-oz--packshot-default-113530-9539148840990.jpg">
+                    <h3>COCO EAU DE PARFUM SPRAY</h3>
+                    <p>Company -  Chanel</p>
+                    <p class="product-type"><i>Type:Oriental Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/513PvaI7OeL._UF1000,1000_QL80_.jpg">
+                    <h3>Oriental Woody fragrance</h3>
+                    <p>Company - Shay</p>
+                    <p class="product-type"><i>Type:  Oriental Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81ppum5cpkL.jpg">
+                    <h3>Long-Lasting Eau De Parfum with Chocolate, Amber & Woody Notes</h3>
+                    <p>Company - Adilqadri Shanaya</p>
+                    <p class="product-type"><i>Type: Oriental Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>  
+    <footer>
+        <center>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: support@azurebreeze.com</p>
+                        <p>Phone: +91 7896547897</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+                    </div>
+                </div>
+                    <p class="footer-bottom">&copy; 2025 azurebreeze. All rights reserved.</p>
+                </div>
+            </div>    
+        </center>
+    </footer>             
+    <script>
+    function toggleDetails(button) {
+      const detailsDiv = button.nextElementSibling;
+      if (detailsDiv.style.display === "none") {
+        detailsDiv.style.display = "block";
+      } else {
+        detailsDiv.style.display = "none";
+      }
+    }
+
+    function toggleReviews(button) {
+      const reviewsDiv = button.nextElementSibling;
+      if (reviewsDiv.style.display === "none") {
+        reviewsDiv.style.display = "block";
+      } else {
+        reviewsDiv.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

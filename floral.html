@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Breeze - Purest Perfumes</title>
+    <link rel="stylesheet" href="azure.css">
+</head>
+<body>
+    <header>
+        <div class="align">
+            <img src="azurelogo.jpeg" alt="Azure Breeze Logo"/>
+            <nav>
+                <ul class="list">
+                    <li><a href="AzureBreeze.html">Home</a></li>
+                    <li><a href="night.html">Night Perfumes</a></li>
+                    <li><a href="floral.html">Floral Perfumes</a></li>
+                    <li><a href="fresh.html">Fresh Perfumes</a></li>
+                    <li><a href="woody.html">Woody Perfumes</a></li>
+                    <li><a href="oriental.html">Oriental Perfumes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Top floral Perfumes</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="https://fraganote.com/cdn/shop/files/WhiteFloral05.png?v=1742461316.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>White floral</h3>
+                    <p>Company - fraganote</p>
+                    <p class="product-type"><i>Type: Floral Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue246/eightfloral03.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>Garder fresh floral perfume</h3>
+                    <p>Company - Dake</p>
+                    <p class="product-type"><i>Type: Floral Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+
+                </div>   
+                <div class="product-card">
+                    <img src="https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/24977518/2024/10/10/81d0c3df-d85d-4dbe-b25a-dc5e1ed4751e1728580023822-HVNLY-Women-Blossom-Long-Lasting-Eau-De-Parfum---30ml-220172-1.jpg" alt="Kisuki Eau de Parfum"/>
+                    <h3>Bloosom premium long-lasting floral fruity and vibrant perfume</h3>
+                    <p>Company - HVNYL</p>
+                    <p class="product-type"><i>Type: Floral Perfume</i></p>
+                    <button class="btn-small" onclick="toggleDetails(this)">View Details</button>
+                    <div class="details" style="display: none; margin-top: 10px;">
+                        <p><strong>Sizes Available:</strong> 50ml, 90ml</p>
+                        <p><strong>Prices:</strong> ₹3500, ₹6000</p>
+                        <button class="btn-small" onclick="toggleReviews(this)">See Reviews</button>
+                        <div class="reviews" style="display: none; margin-top: 10px;">
+                            <p><strong>Aarti M.</strong>: ★★★★★ – "Lovely scent, very refreshing."</p>
+                            <p><strong>Rahul P.</strong>: ★★★★☆ – "Good but expected more longevity."</p>
+                            <p><strong>Sneha T.</strong>: ★★★★★ – "Highly recommend this perfume!"</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section> 
+    <footer>
+        <center>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: support@azurebreeze.com</p>
+                        <p>Phone: +91 7896547897</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+                    </div>
+                </div>
+                    <p class="footer-bottom">&copy; 2025 azurebreeze. All rights reserved.</p>
+                </div>
+            </div>    
+        </center>
+    </footer>  
+    <script>
+    function toggleDetails(button) {
+      const detailsDiv = button.nextElementSibling;
+      if (detailsDiv.style.display === "none") {
+        detailsDiv.style.display = "block";
+      } else {
+        detailsDiv.style.display = "none";
+      }
+    }
+
+    function toggleReviews(button) {
+      const reviewsDiv = button.nextElementSibling;
+      if (reviewsDiv.style.display === "none") {
+        reviewsDiv.style.display = "block";
+      } else {
+        reviewsDiv.style.display = "none";
+      }
+    }
+  </script>              
+
+</body>
+</html>
