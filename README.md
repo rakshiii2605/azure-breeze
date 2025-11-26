@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/azure-breeze/main/banner.png" width="800" alt="Azure Breeze Banner">
+  <img src="https://github.com/rakshiii2605/azure-breeze/blob/main/azurelogo.jpeg" width="800" alt="Azure Breeze Banner">
 </p>
 
 # Azure Breeze
