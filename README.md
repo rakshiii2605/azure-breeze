@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/your-username/azure-breeze/main/banner.png" width="800" alt="Azure Breeze Banner">
 </p>
+
 # Azure Breeze
 
 **Azure Breeze** is a complete fragrance branding concept designed to capture the essence of freshness, elegance, and sophistication. It includes product identity, target audience research, tagline creation, and design direction, showcasing creativity and strategic branding.
